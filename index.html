@@ -14,31 +14,38 @@
             <p>Innovation, performance, reliability, and affordability have been the cornerstones behind eBank™DISCOVERY since its inception. For over 15 years ASV Technologies has been dedicated to improving eBank™DISCOVERY, constantly applying updates and introducing new tools to combat fraud. So corporate, civil, and private institutions can stay ahead of emerging threats.</p>
        </div>
     </section> -->
-    <header id="navbar" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <a href="#">
-                        <img src="https://assets.turbologo.com/blog/en/2019/11/19084834/gaming-logo-cover.jpg" alt="">
-                    </a>
-                    
-                </div>
-                <div class="col-6">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">contact</a></li>
-                            <li><a href="#">Join us</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="menu-phone" onclick="">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+    <header class="">
+        <div class="container-fluid">
+            <div class="navigation"  id="navbar">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#">
+                            <img class="logo" src="https://assets.turbologo.com/blog/en/2019/11/19084834/gaming-logo-cover.jpg" alt="">
+                        </a>
+                        
                     </div>
+                    <div class="col-6">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">contact</a></li>
+                                <li><a href="#">Join us</a></li>
+                            </ul>
+                        </nav>
+    
+                        <div class="menu-phone" onclick="">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://www.picmaker.com/assets/images/youtubeLP/youtube_banner_ogimage.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -47,7 +54,7 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                 <div class="col-12">
+                 <div class="col-6">
                       <h4>EBANK™DISCOVERY COSTS ONLY A FRACTION OF THE POTENTIAL RISK</h4>
                       <ul>
                           <li>Immediate savings by eliminating financial loss from forged checks
@@ -56,17 +63,15 @@
                        <li>Automated process saves time and resources by alleviating the administrative burden associated with finding and filing check fraud cases</li>
                         </ul>
                  </div>
-
-            </div>
-            <div class="row mt-5">
-                <div class="col-12">
-                     <h4>OUR COMMITMENT TO OUR CUSTOMERS</h4>
-                     <p>Innovation, performance, reliability, and affordability have been the cornerstones behind eBank™DISCOVERY since its inception. For over 15 years ASV Technologies has been dedicated to improving eBank™DISCOVERY, constantly applying updates and introducing new tools to combat fraud. So corporate, civil, and private institutions can stay ahead of emerging threats.</p>
+                 <div class="col-6">
+                    <img src="https://www.picmaker.com/assets/images/youtubeLP/youtube_banner_ogimage.png" class="img-fluid" alt="">
                 </div>
 
-           </div>
+            </div>
+            
         </div>
     </section>
+    
 
 
 <section class="py-5 bg-light">
@@ -92,24 +97,14 @@
 
     <script>
         const navbar = document.querySelector("#navbar");
-        const menubtn = document.querySelector(".menu-phone");
         const toggle = document.getElementById("navbar")
 
-
-        menubtn.onclick= () => {
-           if(onclick){
-            menubtn.classList.add("active");
-            // navbar.classList.add("show");
-           }else{
-            // navbar.classList.add("show");
-           }
-        }
 
         toggle.addEventListener('click', () => {navbar.classList.toggle("active");});
         
 
         window.onscroll = () => {
-            this.scrollY > 20 ? navbar.classList.add("sticky"): navbar.classList.remove("sticky");
+            this.scrollY > 80 ? navbar.classList.add("sticky"): navbar.classList.remove("sticky");
         }
 
         // window.onscroll = function(){myFunction()};
@@ -127,6 +122,9 @@
         //             navbar.classList.remove('Header');
         //         }
         //     }
+
+
+        
         // var ary= new Array(3);
 
         // for( g=0; g < 3; g++){
